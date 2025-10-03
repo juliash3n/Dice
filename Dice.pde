@@ -12,12 +12,11 @@ void draw()
   fill(0,0,0);
   strokeWeight(1);
   
-  for(int b = 20; b<285; b+=70){
-     for(int i=20; i<285; i+=70){
+  for(int b = 20; b<=230; b+=70){
+     for(int i=20; i<=230; i+=70){
      bob = new Die(i, b);
      bob.roll();
      bob.show();
-     sum += bob.face;
     }
   }
   text("total: " + sum, 150,325);
